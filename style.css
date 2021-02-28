@@ -1,94 +1,76 @@
 :root {
     --Breite: 95%;
-  }
-  
-  h1 {
-    width: var(--Breite);
-  }
-
-
-
-body{
-    border-radius: 5;
 }
-.wholeClock
-{
+
+h1 {
+    width: var(--Breite);
+}
+
+.wholeClock {
     background-color: GhostWhite;
-    width:20%;
+    width: 20%;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     min-width: 200px;
 }
-.clockElement
-{
-    background-color:SandyBrown;
+
+.clockElement {
+    background-color: SandyBrown;
     width: 70%;
     border-radius: 5px;
-    box-shadow: 6px 6px 10px hsla(300,15%,25%,0.3) inset;
+    box-shadow: 6px 6px 10px hsla(300, 15%, 25%, 0.3) inset;
     margin: 0 auto;
 }
 
-.button
-{
+.button {
     background-color: Khaki;
     margin-bottom: 0.55em;
     border: none;
     font-size: 1em;
     border-radius: 5px;
-    box-shadow: 7px 2px 7px -6px rgba(0,0,0,0.75);
+    box-shadow: 7px 2px 7px -6px rgba(0, 0, 0, 0.75);
 }
 
-
-
-#resetButton:hover
-{
-    background-color: IndianRed ;
+#resetButton:hover {
+    background-color: IndianRed;
     color: white;
     transition: 0.4s;
 }
 
-#startButton:hover
-{
-    background-color :MediumSeaGreen;
+#startButton:hover {
+    background-color: MediumSeaGreen;
     color: white;
     transition: 0.4s;
 }
 
-#timeButton:hover
-{
-    background-color :SlateBlue;
+#timeButton:hover {
+    background-color: SlateBlue;
     color: white;
     transition: 0.4s;
 }
 
-#showResults
-{
-    width:20%;
+#showResults {
+    width: 20%;
     min-width: 200px;
-    
 }
 
-#showResults table{
+#showResults table {
     margin: 0 auto;
-    
-
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-#showResults
-{
+#showResults {
     background-color: GhostWhite;
-    width:20%;
+    width: 20%;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     min-width: 200px;
     margin-top: 0.5em;
 }
 
-
-#showResults table td{
+#showResults table td {
     margin: 0 auto;
     border-style: dashed;
     border-color: brown;
@@ -99,18 +81,13 @@ body{
 
 #showResults tr:nth-child(even) {
     background-color: #dddddd;
-  }
+}
 
-  @media only screen and (max-width: 500px) {
-   
-    .wholeClock
-{
-    width:var(--Breite);
-    
+@media only screen and (max-width: 500px) {
+    .wholeClock {
+        width: var(--Breite);
+    }
+    #showResults {
+        width: var(--Breite);
+    }
 }
-#showResults
-{
-    width:var(--Breite); 
-}
-  }
- 

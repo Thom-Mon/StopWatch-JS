@@ -28,6 +28,7 @@ var savedValue = 0;
 var duration = 0;
 var currentDate = 0;
 var isStopped = false;
+var enableStoppButton = true;
 
 function stopTime() {
     stoppButtonActivated = true;
@@ -45,9 +46,10 @@ function Timer() {
         outputElement.innerHTML = elapsedTime;
     } else if (clockEnabled && stoppButtonActivated) {
         outputElement.innerHTML = elapsedTime;
-        if (isStopped) {
+        if (isStopped && enableStoppButton) {
             savedValue = currentDate - startValue + savedValue;
             isStopped = false;
+            enableStoppButton = false;
         }
     } else {
         outputElement.innerHTML = "00:00:000";
@@ -77,6 +79,7 @@ function startCounting() {
 
     clockEnabled = true;
     stoppButtonActivated = false;
+    enableStoppButton = true;
 }
 
 function resetCounter() {
